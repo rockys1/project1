@@ -1,0 +1,17 @@
+
+header{
+    display: flex;
+    border: solid black;
+    /* padding: 100px; */
+    border-radius: 15px;
+    background-color: black;
+    color: aliceblue;
+
+  
+    
+}
+.image{
+    width: 50%;
+    
+
+}

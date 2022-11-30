@@ -1,0 +1,383 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+
+/* common style or utilities*/
+body {
+    font-family: 'Poppins',
+        sans-serif;
+    background-color:
+        #F3F1FF;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 70px;
+    margin: 0;
+    line-height: 80px;
+}
+.container {
+    background-color: #FFFFFF;
+    width: 1321px;
+   
+    margin-top: 21px;
+    border-radius: 5px;
+}
+.top-banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: linear-gradient(black, black);
+    flex-direction: column;
+    color: white;
+    align-items: flex-end;
+    border-radius: 15px;
+    justify-items: center;
+}
+.top-banner{
+    width: 100%;
+    height: auto;
+}
+.banner-details{
+    align-items: center;
+    justify-content: center;
+    padding-left: 134px;
+    margin: 50px 0;
+    
+}
+.btn1{
+    font-weight: 500;
+    color: white;
+    padding: 10px 20px;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.banner-picture img{
+    display: block;
+}
+
+/* ------------------
+Middle sidebar 
+------------------*/
+.sidebar{
+    align-items: stretch;
+}
+
+.sidebar ul {
+    height: 188px;
+    width: 270px;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 8px;
+            
+}
+
+.sidebar ul li{
+    padding: 6px 8px 6px 16px;
+    list-style-type: none;
+        
+}
+.sidebar ul li a {
+    padding: 11px 8px 15px 16px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 16px;
+    color: #020202;
+    display: block;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+#list-bg{
+    background-color: red;
+}
+/* -----------------
+blog article 
+--------------------*/
+.aside-article{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 130px;
+}
+.blogs {
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 22px;
+        grid-row-gap: 40px;
+        margin-top: 17px;
+        padding-left: 24px;
+        align-items: center;
+        justify-content: center;
+}
+.blog{
+    border: 1px solid rgb(245, 231, 231);
+    border-radius: 10px;
+}
+.blog-details{
+    padding: 0 10px;
+}
+
+.blog-btn {
+    font-size: 16px;
+   
+    font-weight: 500;
+    
+    border: 1px solid black;
+    padding: 5px 15px;
+    border-radius: 12px;
+    width: 21%;
+}
+
+.blog-icon{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    color: gray;
+       
+}
+.blog-icon1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------
+Blog section end 
+-------------------*/
+
+
+/* -------------------
+Upcomming match
+---------------------- */
+.matchs{
+    grid-column-gap: 24px;
+        grid-row-gap: 40px;
+        padding: 53px 30px;
+}
+.match-details h2{
+    font-size: 20px;
+    color: rgb(80, 75, 75);
+}
+#match-time{
+    color: gray;
+    font-size: 16px;
+}
+
+.upcoming-match{
+    flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 40px;
+        margin-top: 17px;
+        padding-left: 24px;
+        align-items: center;
+        justify-content: center;
+}
+
+
+
+/* -------------------
+footer section 
+-----------------------*/
+
+footer{
+    color: white;
+    background-color: #111;
+    height: 414px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+footer h2{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 130px;
+}
+footer hr{
+    width: 90%;
+    border: 1px solid white;
+}
+.footer-list{
+    display: flex;
+    justify-content: center;
+    
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+    list-style-type: none;
+    display: inline;
+}
+footer ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0 10px; 
+}
+.footer-social-icon{
+   
+        text-align: center;
+}
+.footer-social-icon a{
+    align-items: center;
+    color: rgb(169, 169, 169);
+    font-size: 30px;
+    padding: 0 10px;
+    
+}
+/* ------------------
+Media query 
+-------------------*/
+
+/* ------------------
+Mobile responsive 
+--------------------*/
+@media screen and (max-width: 688px) {
+    .container {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+    }
+    .top-banner, .sidebar, .blogs, .footer-sec-con, .upcoming-match{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+            justify-content: center;
+    }
+    .banner-details, .banner-picture, .blog, .footer-list ul li a, .matchs{
+        flex-direction: column;
+    
+    }
+        .aside-article {
+            margin-top: 40px;
+        }
+    .blogs{
+        padding-left: 0;
+    }
+    .blog, footer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .top-banner{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column-reverse; */
+        
+    }
+    .top-p{
+        white-space: nowrap;
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+    }
+    .top-p:hover{
+        overflow: visible;
+    }
+    .banner-details{
+            flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 0;
+    }
+        .banner-details h1{
+            font-size: 40px;
+            line-height: 45px;
+        }
+    .sidebar ul{
+          
+                position: relative;
+                
+                background-color: white;
+            
+    }
+   footer h2{
+    padding-top: 60px;
+   }
+    .footer-list ul li a{
+        display: block;
+        align-items: center;
+    }
+ 
+
+}
+
+/* --------------------------
+Tablet screen responsive 
+------------------------------*/
+
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+.top-banner,
+.blogs,
+.footer-sec-con,
+.upcoming-match 
+{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+    .banner-details,
+    .banner-picture,
+    .blog,
+    .footer-list ul li a,
+    .matchs {
+            flex-direction: column;
+        
+}
+.banner-picture img {
+    
+    display: block;
+}
+.top-p {
+    white-space: nowrap;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.sidebar ul{
+        position: relative;
+        background-color: white;
+            
+    }
+.aside-article{
+margin-top: 40px;
+}
+.banner-details{
+    padding-left: 50px;
+}
+
+.banner-details h1{
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.sidebar ul{
+        display: flex;
+        width: 100%;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: row;
+        height: auto;
+
+
+}
+
+.sidebar ul li a{
+    padding: 10px 20px;
+    
+}
+}
+
